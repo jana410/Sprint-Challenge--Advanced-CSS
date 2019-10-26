@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -56,15 +53,12 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +66,339 @@
       }
     }
   }
-}// home
+} // home
+
+.container-home {
+  background: black;
+  color: white;
+  width: 100%;
+
+  @media @phone {
+    width: 500px;
+    //background: red;
+    margin: 0 auto;
+  } //@phone
+
+  header {
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+
+    //padding: 30px;
+    // position: fixed;
+    // top: 2px;
+    // bottom: 0;
+
+    h1 {
+      font-size: 5rem;
+      color: white;
+      padding: 30px;
+
+      @media @phone {
+        font-size: 2.3rem;
+      }
+
+      @media @tablet {
+        font-size: 3rem;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      border-bottom: 2px solid rgb(12, 0, 117);
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+
+        @media @phone {
+          font-size: 1rem;
+        }
+
+        @media @tablet {
+          font-size: 1.2rem;
+        }
+      }
+
+      a:hover {
+        color: red;
+        //border: 3px solid red;
+        //padding: 25px;
+        border-radius: 6%;
+        cursor: pointer;
+      }
+    } //nav
+  } //end of header
+
+  .header-img-container {
+    width: 100%;
+    padding-bottom: 60px;
+    padding-top: 206px;
+
+    .header-img {
+      width: 100%;
+    }
+  }
+
+  .lift-off-container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    @media @tablet {
+      text-align: center;
+    }
+
+    @media @desktop {
+      text-align: left;
+    }
+
+    h2 {
+      color: white;
+      padding-bottom: 20px;
+
+      @media @phone {
+        font-size: 2.4rem;
+      }
+
+      @media @tablet {
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      @media @phone {
+        //color: red;
+        font-size: 0.9rem;
+      }
+
+      @media @tablet {
+        font-size: 1.3rem;
+      }
+    }
+  } //lift-off
+
+  .space-images {
+    //background: red;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+    @media @tablet {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 90%;
+      margin: auto;
+    }
+
+    .blast {
+      border-radius: 6%;
+
+      @media @phone {
+        width: 80%;
+      }
+
+      @media @tablet {
+        height: 180px;
+        width: 200px;
+      }
+    }
+
+    .sky {
+      border-radius: 6%;
+
+      @media @phone {
+        display: none;
+      }
+
+      @media @tablet {
+        height: 180px;
+        width: 200px;
+      }
+    }
+
+    .launch {
+      border-radius: 6%;
+
+      @media @phone {
+        display: none;
+      }
+
+      @media @tablet {
+        height: 180px;
+        width: 200px;
+      }
+    }
+  } //space-images
+
+  .visit-planets {
+    padding-bottom: 30px;
+    width: 95%;
+    margin: 0 auto;
+
+    @media @tablet {
+      text-align: center;
+      padding-bottom: 40px;
+      border-bottom: 2px solid white;
+    }
+
+    @media @desktop {
+      text-align: left;
+    }
+
+    h3 {
+      color: white;
+      padding-bottom: 20px;
+
+      @media @phone {
+        font-size: 2.4rem;
+        padding: 20px;
+      }
+
+      @media @tablet {
+        font-size: 2.4rem;
+      }
+
+      @media @desktop {
+        padding: 16px;
+      }
+    }
+
+    p {
+      padding: 20px;
+
+      @media @phone {
+        //color: red;
+        font-size: 0.9rem;
+      }
+
+      @media @tablet {
+        font-size: 1.3rem;
+      }
+    }
+  } //.visit-planets
+
+  .walk {
+    width: 90%;
+    margin: 0 auto;
+
+    @media @phone {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+
+    @media @tablet {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      padding-top: 30px;
+    }
+
+    .walk-text {
+      //background: red;
+      padding-bottom: 30px;
+
+      @media @tablet {
+        padding: 30px;
+      }
+
+      h3 {
+        color: white;
+
+        @media @phone {
+          font-size: 2.4rem;
+          padding: 20px;
+        }
+
+        @media @tablet {
+          font-size: 2rem;
+          padding-bottom: 20px;
+        }
+      }
+
+      p {
+        padding-bottom: 20px;
+
+        @media @phone {
+          //color: red;
+          font-size: 0.9rem;
+        }
+
+        @media @tablet {
+          font-size: 1rem;
+        }
+      }
+
+      .btn-container {
+        width: 90%;
+        margin: 0 auto;
+        //background: red;
+        text-align: center;
+
+        .sign-up {
+          border: 2px solid white;
+          background: black;
+
+          @media @phone {
+            width: 100%;
+            padding: 8px;
+          }
+
+          @media @tablet {
+            width: 60%;
+          }
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            @media @phone {
+              font-size: 1rem;
+            }
+
+            @media @tablet {
+              font-size: 1.3rem;
+            }
+          }
+        } //.sign-up
+      } //.btn-container
+    } //walk-text
+
+    .walk-img-container {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+
+      @media @tablet {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+      }
+
+      .walk-image {
+        border-radius: 6%;
+
+        @media @phone {
+          width: 80%;
+        }
+
+        @media @tablet {
+          height: 200px;
+          width: 200px;
+        }
+      }
+    }
+  } //walk
+} // End of container-home
